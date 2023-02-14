@@ -1,0 +1,61 @@
+/*header font*/
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+/*body font*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*photo filter*/
+.filter {
+    -webkit-filter: brightness(110%) contrast(85%) saturate(75%);
+    filter: brightness(110%) contrast(85%) saturate(75%);
+}
+
+/*animation reveal*/
+.revealing {
+    display:inline-block;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+.revealing:first-of-type {    /* For increasing performance
+                       ID/Class should've been used.
+                       For a small demo
+                       it's okaish for now */
+    animation: showup 7s infinite;
+}
+
+.revealing:last-of-type {
+    width:0;
+    animation: reveal 7s infinite;
+}
+
+.revealing:last-of-type span {
+    width: 100%;
+    margin-left:-355px;
+    animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0; }
+    100% { margin-left:0; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0;}
+    20% {opacity:1;width:0;}
+    30% {width:500px;}
+    80% {opacity:1;}
+    100% {opacity:0;width:500px;}
+}
