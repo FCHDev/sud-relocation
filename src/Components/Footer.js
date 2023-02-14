@@ -44,8 +44,6 @@ const Footer = () => {
 						  </div>
 
 					</span>
-
-
         </div>
     );
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import pool from '../Assets/Images/pool.jpg';
+import pool2 from '../Assets/Images/pool2.jpg';
 import beach from '../Assets/Images/beach01.jpg';
 import lavandeBanner from '../Assets/Images/lavande-banner.jpg';
 import ContactCard from "../Components/ContactCard";
@@ -7,13 +7,13 @@ import {NavLink} from "react-router-dom";
 
 const Accueil = () => {
     return (
-        <div className="md:min-h-[86vh] lg:h-[86vh] flex flex-col pb-5 md:pb-0 animate-appear bg-gris-sud-light bg-opacity-25">
+        <div className="md:min-h-[86vh] flex flex-col pb-5 md:pb-0 animate-appear bg-gris-sud-light bg-opacity-25">
             {/*Banner*/}
             <div className="mb-5 mt-3 md:mt-0 md:mb-10">
                 <img className="object-cover h-[250px] w-full filter hidden md:block" src={lavandeBanner} alt=""/>
             </div>
             {/*Titre de la page DESKTOP*/}
-            <div className="hidden md:flex w-full justify-center">
+            <div className="hidden md:flex w-full justify-center mb-5">
                 <div className="revealing font-header text-bleu-sud font-bold text-center text-xl md:text-5xl pb-5">
                     Vous relogez vos salariés ?
                 </div>
@@ -36,7 +36,7 @@ const Accueil = () => {
 
             {/*Texte de présentation*/}
             <div className="h-full container flex flex-col justify-evenly items-center px-5 mx-auto">
-                <div className="flex md:flex-row flex-col items-center rounded-3xl bg-white">
+                <div className="flex md:flex-row flex-col items-center rounded-3xl bg-white mb-5">
                     <img src={beach} alt="champ de lavande"
                          className="h-80 rounded-t-3xl md:rounded-t-none md:rounded-tl-3xl md:rounded-bl-3xl object-cover"/>
                     <p className="mt-5 md:my-0 mb-5 md:mx-5 md:font-light md:text-xl font-bodyText md:px-0 px-2">
@@ -68,13 +68,13 @@ const Accueil = () => {
                         géographique, permet d’aborder ce changement de vie dans les meilleures conditions, de <span className="font-bold underline">réduire
                         les coûts</span> et d’alléger la charge de travail du service RH.
                     </p>
-                    <img src={pool} alt="champ de lavande"
+                    <img src={pool2} alt="champ de lavande"
                          className="h-80 rounded-t-3xl md:rounded-t-none md:rounded-tr-3xl md:rounded-br-3xl object-cover"/>
                 </div>
             </div>
 
             {/*Carte contact*/}
-            <div className="w-1/4 mx-auto h-1/4 flex items-center justify-center">
+            <div className="w-1/3 h-1/4 mx-auto my-10 flex items-center justify-center">
                 <ContactCard/>
             </div>
 

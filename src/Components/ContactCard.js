@@ -4,7 +4,7 @@ import angelina from '../Assets/Images/angelina.jpg'
 
 const ContactCard = () => {
     return (
-        <div className="flex flex-col justify-around rounded-2xl mx-auto bg-white shadow-lg">
+        <div className="flex flex-col justify-around rounded-2xl mx-auto bg-white shadow-lg bg-bleu-sud bg-opacity-10 py-3">
 
             <div className="flex px-2 py-1 h-[150px] ">
                 <div className="h-full w-full flex items-center justify-center">

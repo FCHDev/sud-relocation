@@ -7,8 +7,8 @@ const Navbar = () => {
     const menuItems = [
         {title: 'Accueil', link: '/'},
         {title: 'Missions', link: '/missions'},
-        {title: 'Salarié', link: '/salarie'},
-        {title: 'Entreprise', link: '/entreprise'},
+        {title: 'Vous êtes Salarié', link: '/salarie'},
+        {title: 'Vous êtes une Entreprise', link: '/entreprise'},
         {title: 'Contact', link: '/contact'},
     ]
 

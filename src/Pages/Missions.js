@@ -42,9 +42,9 @@ const Missions = () => {
     ]
 
     return (
-        <div className="md:min-h-[86vh] lg:h-[86vh] flex-col justify-center items-center bg-gris-sud bg-opacity-5 rounded-2xl py-10 md:px-5">
+        <div className="md:min-h-[86vh] flex-col justify-center items-center bg-gris-sud bg-opacity-5 rounded-2xl py-10 md:px-5">
             {/*Partie résumé des missions*/}
-            <div className="md:container mx-auto h-1/3 flex flex-col justify-center items-center p-3 bg-white rounded-2xl">
+            <div className="md:container mx-auto h-1/3 flex flex-col justify-center items-center p-3 bg-white rounded-2xl mb-14">
                 <div className="flex md:flex-row flex-col items-center mx-3">
                     <img className="md:block hidden w-1/4 md:h-full object-cover rounded-xl opacity-80" src={house} alt="une mini maison avec un toit rouge et un jeu de clés posé à côté"/>
                     <div className="md:w-3/4">
@@ -64,7 +64,7 @@ const Missions = () => {
             {/*Partie détails des missions*/}
             <div className="container mx-auto md:h-2/3 flex flex-wrap justify-between items-center">
                 {missionsDetails.map((item, index) => (
-                    <div key={index} className="flex md:flex-row flex-col md:w-[750px] justify-center w-full md:h-2/5 h-[360px] shadow-lg rounded-2xl p-5 bg-white m-2">
+                    <div key={index} className="flex md:flex-row flex-col md:w-[750px] justify-center w-full md:h-[300px] h-[360px] shadow-lg rounded-2xl p-5 bg-white m-2">
                         <div className="md:w-2/5">
                             <img className="md:w-full md:h-full h-[200px] w-[200px] mx-auto object-cover rounded-xl opacity-90" src={item.pic} alt={item.title}/>
                         </div>
