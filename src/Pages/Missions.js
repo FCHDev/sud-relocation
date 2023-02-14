@@ -46,7 +46,7 @@ const Missions = () => {
             {/*Partie résumé des missions*/}
             <div className="md:container mx-auto h-1/3 flex flex-col justify-center items-center p-3 bg-white rounded-2xl">
                 <div className="flex md:flex-row flex-col items-center mx-3">
-                    <img className="md:block hidden w-1/4 md:h-full object-cover rounded-xl opacity-80" src={house} alt="image"/>
+                    <img className="md:block hidden w-1/4 md:h-full object-cover rounded-xl opacity-80" src={house} alt="une mini maison avec un toit rouge et un jeu de clés posé à côté"/>
                     <div className="md:w-3/4">
                         <h1 className="md:text-5xl text-2xl font-bold text-bleu-sud font-header md:pl-5 pt-2 md:pt-0 pb-5">
                             Simplifier vos démarches
@@ -66,7 +66,7 @@ const Missions = () => {
                 {missionsDetails.map((item, index) => (
                     <div key={index} className="flex md:flex-row flex-col md:w-[750px] justify-center w-full md:h-2/5 h-[360px] shadow-lg rounded-2xl p-5 bg-white m-2">
                         <div className="md:w-2/5">
-                            <img className="md:w-full md:h-full h-[200px] w-[200px] mx-auto object-cover rounded-xl opacity-90" src={item.pic} alt="image"/>
+                            <img className="md:w-full md:h-full h-[200px] w-[200px] mx-auto object-cover rounded-xl opacity-90" src={item.pic} alt={item.title}/>
                         </div>
                         <div className="flex flex-col justify-center mx-5 md:w-3/5">
                             <div className="flex items-center justify-center md:justify-start md:h-1/2">
