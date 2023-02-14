@@ -5,7 +5,7 @@ import communication from '../Assets/SVG/communication.svg'
 import facilitator from '../Assets/SVG/facilitator.svg'
 import house from '../Assets/Images/house.jpg'
 import faciliter from '../Assets/Images/faciliter.jpg'
-import coordonner from '../Assets/Images/coordonner.avif'
+import coordonner from '../Assets/Images/coordonner.jpg'
 import communiquer from '../Assets/Images/communiquer.jpg'
 import accompagner from '../Assets/Images/accompagner.jpg'
 
