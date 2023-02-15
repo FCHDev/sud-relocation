@@ -6,9 +6,9 @@ import map from '../Assets/SVG/google-maps.svg'
 
 const ContactCard = () => {
     return (
-        <div className="flex flex-col justify-around rounded-2xl md:mx-auto mx-1 h-[170px] bg-orange-sud shadow-lg p-3 w-full">
-            <div className="flex px-2 py-1 h-[150px] ">
-                <div className="h-full w-full flex items-center justify-center md:ml-20">
+        <div className="flex flex-col justify-around rounded-2xl md:mx-auto mx-1 h-[170px] bg-orange-sud shadow-lg md:p-3 w-full">
+            <div className="flex px-2 md:py-1 h-[150px] ">
+                <div className="md:h-full w-full flex items-center justify-center md:ml-20">
                     <img className="md:block hidden w-1/5 rounded-full mr-5" src={angelina} alt="aurélie"/>
                     <div className="w-4/5 flex flex-col">
                         <p className="font-bodyText text-white font-bold md:text-xl">Aurélie DADI</p>
@@ -30,7 +30,7 @@ const ContactCard = () => {
                 </div>
             </div>
 
-            <div className="flex justify-center items-center pt-2 md:pt-0">
+            <div className="flex justify-center items-center">
                     <NavLink
                         to="https://www.google.com/maps/place/53+Rue+du+Paradis,+34740+Vendargues/@43.6659693,3.9757857,17z/data=!3m1!4b1!4m6!3m5!1s0x12b6a6c7bb59c59d:0x194bda4927576d7e!8m2!3d43.6659693!4d3.9757857!16s%2Fg%2F11mv_yc_l6"
                         target="_blank" rel="noreferrer noopener"

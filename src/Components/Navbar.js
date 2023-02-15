@@ -114,7 +114,7 @@ const Navbar = () => {
             {/*MENU*/}
 
             <div onClick={() => setIsOpen(!isOpen)}
-                 className="text-3xl w-8 absolute right-8 top-4 sm:top-5 cursor-pointer md:hidden z-20">
+                 className="text-3xl w-8 absolute right-8 top-5 cursor-pointer md:hidden z-20">
                 {isOpen ? closeBurger : menuBurger}
             </div>
 
@@ -132,10 +132,11 @@ const Navbar = () => {
                     font-header 
                     text-2xl 
                     justify-center
+                    pt-5
                     pb-8 
                     absolute 
                     bg-white
-                    bg-opacity-80
+                    bg-opacity-90
                     backdrop-blur-sm
                     rounded-2xl
                     left-0
