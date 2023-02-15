@@ -9,7 +9,7 @@ module.exports = {
             'orange-sud': '#d38327',
             'bleu-sud': '#1985A1',
             'gris-sud': '#7C6C77',
-            'gris-sud-light': '#D9D3D7',
+            'gris-sud-light': '#EEF0F2',
         },
         extend: {
             keyframes: {
@@ -19,12 +19,13 @@ module.exports = {
                 }
             },
           animation: {
-            appear: 'appear 1s ease-in',
+            appear: 'appear 0.5s ease-in',
           }
         },
         fontFamily: {
             header: ['Poiret One', 'sans-serif'],
             bodyText: ['Raleway', 'sans-serif'],
+            bigTitle: ['Anybody', 'sans-serif'],
         }
     },
     plugins: [

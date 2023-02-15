@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 /*body font*/
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+/*title font*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@100;400;700&display=swap');
+
 
 @tailwind base;
 @tailwind components;
@@ -20,10 +24,7 @@
     white-space:nowrap;
 }
 
-.revealing:first-of-type {    /* For increasing performance
-                       ID/Class should've been used.
-                       For a small demo
-                       it's okaish for now */
+.revealing:first-of-type {
     animation: showup 7s infinite;
 }
 

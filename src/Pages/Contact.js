@@ -1,11 +1,12 @@
 import React from 'react';
+import ContactForm from "../Components/ContactForm";
 
 const Contact = () => {
     return (
-        <div className="h-[86vh] bg-gris-sud bg-opacity-5 rounded-2xl py-3 px-5 mb-[1vh]">
-            <h1 className="font-header text-orange-sud font-bold text-3xl pb-5">
-                CONTACT
-            </h1>
+        <div className="min-h-[86vh] flex justify-center items-center bg-gris-sud-light rounded-2xl py-3 px-5 animate-appear">
+            <div className="container mx-auto">
+                <ContactForm/>
+            </div>
         </div>
     );
 };

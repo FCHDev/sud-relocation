@@ -1,4 +1,5 @@
 import React from 'react';
+// import des svg et des images
 import help from '../Assets/SVG/helping-hand.svg'
 import coordination from '../Assets/SVG/coordination.svg'
 import communication from '../Assets/SVG/communication.svg'
@@ -7,7 +8,7 @@ import house from '../Assets/Images/house.jpg'
 import faciliter from '../Assets/Images/faciliter.jpg'
 import coordonner from '../Assets/Images/coordonner.jpg'
 import communiquer from '../Assets/Images/communiquer.jpg'
-import accompagner from '../Assets/Images/accompagner.jpg'
+import accompagner from '../Assets/Images/agentimmo.jpeg'
 
 const Missions = () => {
     const missionsDetails = [
@@ -42,7 +43,7 @@ const Missions = () => {
     ]
 
     return (
-        <div className="md:min-h-[86vh] flex-col justify-center items-center bg-gris-sud bg-opacity-5 rounded-2xl py-10 md:px-5">
+        <div className="md:min-h-[86vh] flex-col justify-center items-center bg-gris-sud bg-opacity-5 rounded-2xl py-10 md:px-5 animate-appear">
             {/*Partie résumé des missions*/}
             <div className="md:container mx-auto h-1/3 flex flex-col justify-center items-center p-3 bg-white rounded-2xl mb-14">
                 <div className="flex md:flex-row flex-col items-center mx-3">
@@ -71,9 +72,13 @@ const Missions = () => {
                         <div className="flex flex-col justify-center mx-5 md:w-3/5">
                             <div className="flex items-center justify-center md:justify-start md:h-1/2">
                                 <img className="hidden md:block" src={item?.icon} alt=""/>
-                                <h2 className={`font-bodyText text-2xl md:text-3xl md:ml-10 ${item.textColor}`}>{item.title}</h2>
+                                <h2 className={`font-header font-bold text-2xl md:text-3xl md:ml-10 ${item.textColor}`}>
+                                    {item.title}
+                                </h2>
                             </div>
-                            <p className="md:text-xl h-1/2 text-sm text-center md:text-start font-bodyText">{item.body}</p>
+                            <p className="md:text-xl h-1/2 text-sm text-center md:text-start font-bodyText">
+                                {item.body}
+                            </p>
                         </div>
                     </div>
 
