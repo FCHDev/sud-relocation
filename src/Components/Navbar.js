@@ -106,9 +106,9 @@ const Navbar = () => {
     };
 
     return (
-        <div className="w-full md:h-[6vh] h-[8vh] flex my-[1vh]">
+        <div className="w-full md:h-[6vh] h-[8vh] flex my-[1vh] md:my-0">
             {/*LOGO*/}
-            <NavLink to="/" className="md:w-1/6 md:h-full w-[150px] flex justify-center items-center">
+            <NavLink to="/" className="md:w-1/6 md:h-full w-[160px] flex justify-center items-center">
                 <img className="md:h-16 object-cover" src={logo} alt="sud relocation montpellier languedoc"/>
             </NavLink>
             {/*MENU*/}

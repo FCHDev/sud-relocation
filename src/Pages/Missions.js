@@ -43,13 +43,13 @@ const Missions = () => {
     ]
 
     return (
-        <div className="md:min-h-[86vh] flex-col justify-center items-center bg-gris-sud bg-opacity-5 rounded-2xl py-10 md:px-5 animate-appear">
+        <div className="md:min-h-[88vh] flex-col justify-center items-center bg-gris-sud bg-opacity-5 rounded-2xl md:py-10 md:px-5 animate-appear">
             {/*Partie résumé des missions*/}
-            <div className="md:container mx-auto h-1/3 flex flex-col justify-center items-center p-3 bg-white rounded-2xl mb-14">
+            <div className="md:container mx-auto h-1/3 flex flex-col justify-center items-center p-3 bg-white rounded-2xl mb-14 md:mb-32">
                 <div className="flex md:flex-row flex-col items-center mx-3">
                     <img className="md:block hidden w-1/4 md:h-full object-cover rounded-xl opacity-80" src={house} alt="une mini maison avec un toit rouge et un jeu de clés posé à côté"/>
                     <div className="md:w-3/4">
-                        <h1 className="md:text-5xl text-2xl font-bold text-bleu-sud font-header md:pl-5 pt-2 md:pt-0 pb-5">
+                        <h1 className="md:text-5xl text-3xl font-bold text-bleu-sud font-header md:pl-5 pt-2 md:pt-0 pb-5">
                             Simplifier vos démarches
                         </h1>
                         <p className="font-bodyText md:text-xl pb-3 md:pl-5">

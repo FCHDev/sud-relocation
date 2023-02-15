@@ -6,10 +6,9 @@ import map from '../Assets/SVG/google-maps.svg'
 
 const ContactCard = () => {
     return (
-        <div className="flex flex-col justify-around rounded-2xl mx-auto bg-orange-sud shadow-lg py-3">
-
+        <div className="flex flex-col justify-around rounded-2xl md:mx-auto mx-1 h-[170px] bg-orange-sud shadow-lg p-3 w-full">
             <div className="flex px-2 py-1 h-[150px] ">
-                <div className="h-full w-full flex items-center justify-center ml-20">
+                <div className="h-full w-full flex items-center justify-center md:ml-20">
                     <img className="md:block hidden w-1/5 rounded-full mr-5" src={angelina} alt="aurélie"/>
                     <div className="w-4/5 flex flex-col">
                         <p className="font-bodyText text-white font-bold md:text-xl">Aurélie DADI</p>
