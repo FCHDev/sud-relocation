@@ -7,7 +7,7 @@ const Footer = () => {
             <img className="object-cover h-full" src={logoWhite} alt="sud relocation logo montpellier languedoc"/>
 
             {/*COPYRIGHT*/}
-            <span className="text-white text-xs md:text-base">Copyright © 2023. All rights reserved.</span>
+            <span className="text-white text-xs md:text-base font-bodyText">Copyright © 2023. All rights reserved.</span>
             {/*ICONES RESEAUX SOCIAUX*/}
             <span className="hidden md:inline-flex justify-center sm:justify-start">
 
