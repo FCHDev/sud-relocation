@@ -9,6 +9,7 @@ import faciliter from '../Assets/Images/faciliter.jpg'
 import coordonner from '../Assets/Images/coordonner.jpg'
 import communiquer from '../Assets/Images/communiquer.jpg'
 import accompagner from '../Assets/Images/agentimmo.jpeg'
+import {NavLink} from "react-router-dom";
 
 const Missions = () => {
     const missionsDetails = [
@@ -53,7 +54,7 @@ const Missions = () => {
                             Simplifier vos démarches
                         </h1>
                         <p className="font-bodyText md:text-xl pb-3 md:pl-5">
-                            Avec <span className="text-orange-sud font-bold">Sud Relocation</span> sit amet, consectetur adipisicing elit. Ad aliquid debitis doloremque iure laudantium mollitia nemo quia totam. A ab alias aliquam architecto aut beatae commodi culpa cumque deserunt dolor ducimus eius excepturi iste maxime minus molestias nobis nulla omnis optio perspiciatis quisquam quo ratione recusandae reiciendis similique, sint voluptates.
+                            <span className="text-orange-sud font-bold">Sud Relocation</span> est membre du réseau <NavLink to="http://www.e-mobilia.com/home.html" target="_blank" rel="noreferrer noopener" className="text-bleu-sud font-bold md:text-2xl hover:text-orange-sud">e-mobilia</NavLink> sit amet, consectetur adipisicing elit. Ad aliquid debitis doloremque iure laudantium mollitia nemo quia totam. A ab alias aliquam architecto aut beatae commodi culpa cumque deserunt dolor ducimus eius excepturi iste maxime minus molestias nobis nulla omnis optio perspiciatis quisquam quo ratione recusandae reiciendis similique, sint voluptates.
                         </p>
                         <p className="font-bodyText md:text-xl md:pl-5">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid debitis doloremque iure laudantium mollitia nemo quia totam. A ab alias aliquam architecto aut beatae commodi culpa cumque deserunt dolor ducimus eius excepturi iste maxime minus molestias nobis nulla omnis optio perspiciatis quisquam quo ratione recusandae reiciendis similique, sint voluptates.

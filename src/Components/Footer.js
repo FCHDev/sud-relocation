@@ -1,10 +1,18 @@
 import React from 'react';
 import logoWhite from '../Assets/Images/logosudreloc-white.png'
+import logoEmobiliaWhite from '../Assets/Images/logoemobilia-white.png'
+import {NavLink} from "react-router-dom";
 
 const Footer = () => {
     return (
-        <div className="h-[6vh] flex justify-evenly items-center bg-bleu-sud md:py-4 py-2 px-5">
-            <img className="object-cover h-full" src={logoWhite} alt="sud relocation logo montpellier languedoc"/>
+        <div className="min-h-[6vh] flex justify-evenly items-center bg-bleu-sud md:py-4 py-2 px-5 mx-auto">
+			<div className="flex justify-center md:h-[60px] h-[20px]">
+				<img src={logoWhite} alt="sud relocation logo montpellier languedoc"/>
+				<NavLink to="http://www.e-mobilia.com/home.html" target="_blank" rel="noreferrer noopener">
+				<img className="md:w-[150px] w-[50px]" src={logoEmobiliaWhite} alt="emobilia logo sud nîmes montpellier languedoc"/>
+				</NavLink>
+			</div>
+
 
             {/*COPYRIGHT*/}
             <span className="text-white text-xs md:text-base font-bodyText">Copyright © 2023. All rights reserved.</span>

@@ -30,7 +30,7 @@ const ContactCard = () => {
                 </div>
             </div>
 
-            <div className="flex justify-center items-center">
+            <div className="flex justify-center items-center pb-3 md:pb-0">
                     <NavLink
                         to="https://www.google.com/maps/place/53+Rue+du+Paradis,+34740+Vendargues/@43.6659693,3.9757857,17z/data=!3m1!4b1!4m6!3m5!1s0x12b6a6c7bb59c59d:0x194bda4927576d7e!8m2!3d43.6659693!4d3.9757857!16s%2Fg%2F11mv_yc_l6"
                         target="_blank" rel="noreferrer noopener"

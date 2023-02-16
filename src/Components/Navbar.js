@@ -106,29 +106,35 @@ const Navbar = () => {
     };
 
     return (
-        <div className="w-full md:h-[6vh] h-[8vh] flex my-[1vh] md:my-0">
+        <div className="w-full lg:min-h-[6vh] h-[8vh] flex my-[1vh] 2xl:my-0">
             {/*LOGO*/}
-            <NavLink to="/" className="md:w-1/6 md:h-full w-[160px] flex justify-center items-center">
+            <NavLink to="/" className="lg:w-1/6 md:ml-4 md:h-full w-[160px] flex justify-center items-center">
                 <img className="md:h-16 object-cover" src={logo} alt="sud relocation montpellier languedoc"/>
             </NavLink>
             {/*MENU*/}
 
             <div onClick={() => setIsOpen(!isOpen)}
-                 className="text-3xl w-8 absolute right-8 top-5 cursor-pointer md:hidden z-20">
+                 className="text-3xl w-8 absolute right-8 top-5 md:top-10 cursor-pointer lg:hidden z-20">
                 {isOpen ? closeBurger : menuBurger}
             </div>
 
             <div className={`
-                    md:w-4/6 
-                    md:flex 
-                    md:items-center
-                    md:pb-0 
-                    md:pl-0 
-                    md:static
-                    md:z-auto 
-                    md:text-3xl
-                    md:opacity-100
+                    lg:w-4/6 
+                    lg:flex 
+                    lg:items-center
+                    lg:pb-0 
+                    lg:pl-0 
+                    lg:z-auto 
+                    lg:text-xl
+                    lg:opacity-100
+                    lg:pt-0
+                    lg:text-lg
+                    lg:static
+                    lg:text-2xl
+                    2xl:text-3xl
                     w-[320px]
+                    md:w-full
+                    md:pb-9
                     font-header 
                     text-2xl 
                     justify-center
@@ -141,10 +147,10 @@ const Navbar = () => {
                     rounded-2xl
                     left-0
                     pl-9 
-                    transition-all duration-500 ease-in z-20 ${isOpen ? 'top-14 opacity-100' : 'top-[-490px]'}`}>
+                    transition-all duration-500 ease-in z-20 ${isOpen ? 'top-14 md:top-24 opacity-100' : 'top-[-490px]'}`}>
                 {menuItems.map((item, index) => (
                     <div key={index}
-                         className="py-2 md:py-0 md:mx-8 text-orange-sud active:text-bleu-sud transition ease-in-out md:hover:-translate-y-1 md:hover:scale-105 duration-300">
+                         className="py-2 md:py-0 md:mx-8 text-orange-sud active:text-bleu-sud transition ease-in-out lg:hover:-translate-y-1 lg:hover:scale-105 duration-300">
                         <NavLink to={item.link}
                                  style={({isActive}) => isActive ? activeStyle : undefined}
                                  onClick={() => {
@@ -155,11 +161,11 @@ const Navbar = () => {
                     </div>))}
             </div>
             {/*BOUTON APPEL*/}
-            <div className="w-1/6 bg-yellow-500 hidden md:flex justify-center items-center text-xl">
+            <div className="w-1/6 hidden lg:flex justify-center items-center text-xl">
                 <button
                     className="flex items-center bg-bleu-sud text-white font-bodyText font-bold px-3 py-2 rounded-xl hover:bg-orange-sud">
                     <img className="mr-2" src={phone} alt="telephone icon"/>
-                    <span className="hidden md:block">
+                    <span className="md:block text-base 2xl:text-2xl">
                         Appelez-nous
                     </span>
                 </button>
